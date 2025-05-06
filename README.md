@@ -56,8 +56,9 @@ print(output.shape)  # Output: torch.Size([2, 5])
 ````
 
 ## Dependencies
-
+```bash
 pip install -r requirements.txt
+```
 
 Install requirements:
 
@@ -85,7 +86,5 @@ Make sure to convert your labels into integer class indices from 0 to 4.
 ---
 
 Feel free to contribute or fork this repo!
-
-```
 
 ---
