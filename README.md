@@ -39,7 +39,6 @@ FingerNumber/
 └── README.md                  # Project documentation
 
 ```
-```
 
 ### Input/Output:
 
@@ -60,11 +59,6 @@ print(output.shape)  # Output: torch.Size([2, 5])
 pip install -r requirements.txt
 ```
 
-Install requirements:
-
-```bash
-pip install torch torchvision matplotlib numpy
-```
 
 ## Dataset
 
