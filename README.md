@@ -28,8 +28,8 @@ FingerNumber/
 │   └── val/                   # Validation images
 │
 ├── utils/                     # Utility functions
-│   ├── **pycache**/           # Compiled Python cache (can be ignored)
-│   └── my\_utils.py            # Custom utility functions
+│   ├── pycache/               # Compiled Python cache (can be ignored)
+│   └── my_utils.py            # Custom utility functions
 │
 ├── DataProcess.py             # Data loading and preprocessing script
 ├── Model.py                   # CNN model definition
