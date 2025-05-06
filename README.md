@@ -19,19 +19,21 @@ The model is defined in `GestureRecognitionModel`, a custom PyTorch neural netwo
 
 ### Project Structure:
 FingerNumber/
-├── utils/                         
-│   ├── _pycache_
-│   └── my_utils.py
-├── Dataset/                         
-│   ├── train
-│   ├── test
-│   └── val
-├── DataProcess.py               
-├── Model.py                
-├── Optimizer.py          
-├── requirements.txt      
-├── Train.py        
-└── README.md                
+├── Dataset/ # Dataset directory
+│ ├── train/ # Training images
+│ ├── test/ # Test images
+│ └── val/ # Validation images
+│
+├── utils/ # Utility functions
+│ ├── pycache/ # Compiled Python cache (can be ignored)
+│ └── my_utils.py # Custom utility functions
+│
+├── DataProcess.py # Data loading and preprocessing script
+├── Model.py # CNN model definition
+├── Optimizer.py # Optimizer and scheduler setup
+├── Train.py # Training loop and logic
+├── requirements.txt # Project dependencies
+└── README.md # Project documentation      
 
 
 ### Input/Output:
