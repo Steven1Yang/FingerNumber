@@ -1,5 +1,4 @@
 # FingerNumber
-````markdown
 # Hand Gesture Digit Recognition using CNN
 
 This project implements a Convolutional Neural Network (CNN) in PyTorch to recognize hand gestures representing digits (0–4). The input is grayscale images of hand gestures, and the output is the predicted digit class.
@@ -18,6 +17,23 @@ The model is defined in `GestureRecognitionModel`, a custom PyTorch neural netwo
 - **Linear(1024 → 512)** → **ReLU**
 - **Linear(512 → 5)**
 
+### Project Structure:
+FingerNumber/
+├── utils/                         
+│   ├── _pycache_
+│   └── my_utils.py
+├── Dataset/                         
+│   ├── train
+│   ├── test
+│   └── val
+├── DataProcess.py               
+├── Model.py                
+├── Optimizer.py          
+├── requirements.txt      
+├── Train.py        
+└── README.md                
+
+
 ### Input/Output:
 
 - **Input shape**: `(batch_size, 1, 224, 224)` — grayscale hand gesture image
@@ -34,10 +50,7 @@ print(output.shape)  # Output: torch.Size([2, 5])
 
 ## Dependencies
 
-* Python 3.7+
-* PyTorch
-* torchvision (optional for dataset/image preprocessing)
-* matplotlib, numpy, etc. (for training visualization)
+pip install -r requirements.txt
 
 Install requirements:
 
@@ -51,7 +64,7 @@ The model is designed to work with grayscale images of hand gestures representin
 
 You can use your own dataset or collect gesture images using a webcam and annotate them appropriately.
 
-## Training (Example)
+## Training 
 
 You can train the model using standard PyTorch training loops:
 
@@ -61,10 +74,6 @@ optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
 ```
 
 Make sure to convert your labels into integer class indices from 0 to 4.
-
-## License
-
-MIT License © 2025 Steven1Yang
 
 ---
 
